@@ -152,10 +152,10 @@
 
   function getAssignment(ID, ag)
   {
-    for(const assignment of ag.assignments)
+    for(let i = 0; i < ag.assignments.length; i++)
     {
-      if(assignment.id == ID)
-        return assignment; 
+      if(ag.assignments[i].id == ID)
+        return ag.assignments[i]; 
     }
   }
 
